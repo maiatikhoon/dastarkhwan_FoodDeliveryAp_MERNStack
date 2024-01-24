@@ -51,7 +51,7 @@ function LoginSignup() {
             console.log("after local storage") ; 
             if(user) { 
                navigate("/food") ; 
-               location.reload() ;
+              //  location.reload() ;
             } 
 
          } catch (error) {
@@ -73,7 +73,7 @@ function LoginSignup() {
 
            if(user) {
               navigate("/food") ; 
-              location.reload(); 
+              // location.reload();  
            }
           
          } catch (error) {
