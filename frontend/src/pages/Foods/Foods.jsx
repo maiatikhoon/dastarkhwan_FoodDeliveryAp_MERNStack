@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from "../../components/Header"; 
 import Footer from "../../components/Footer"  
 import CategoryMenu from "../../components/CategoryMenu" ; 
@@ -6,7 +6,8 @@ import FoodItems from "../../components/FoodItems"
 import { useDispatch } from 'react-redux' ;   
 import {setSearch} from "../../redux/Slices/SearchSlice"
 
-function Foods() { 
+function Foods() {  
+
 
   const dispatch = useDispatch() ; 
   return (

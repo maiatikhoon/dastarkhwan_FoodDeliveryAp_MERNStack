@@ -11,7 +11,8 @@ function FoodItems() {
   const search  = useSelector( state => state.search.search) ;  
 
 
-  const [foodData, setFoodData] = useState([]) ; 
+  const [foodData, setFoodData] = useState([]) ;  
+  const [loading , setLoading ] = useState(true) ; 
 
 
   const getAllDishes = async()=> { 
@@ -20,7 +21,8 @@ function FoodItems() {
 
       const data = response.data ; 
 
-       setFoodData(data) ; 
+       setFoodData(data) ;  
+       setLoading(false) ;
          
   } 
 
@@ -31,7 +33,9 @@ function FoodItems() {
 
   } , [])
 
-  return ( 
+   return loading ? ( 
+   <div> Loading ....</div>)
+    : ( 
     <> 
       <Toaster position="top-center" reverseOrder={false} /> 
 
