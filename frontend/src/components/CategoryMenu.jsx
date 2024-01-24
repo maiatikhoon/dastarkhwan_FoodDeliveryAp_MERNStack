@@ -13,7 +13,8 @@ function CategoryMenu() {
     setCategories(uniqueCategories) ;
     
   }  
-
+ 
+  const user = localStorage.getItem("user") ; 
   useEffect( ()=> { 
       listUniqueCategories() ;
   } , []) ;  
@@ -23,7 +24,7 @@ function CategoryMenu() {
 
   return (
     <div className='ml-6'>
-        <h3 className='text-xl font-semibold'> Find the best food </h3> 
+        <h3 className='text-xl font-semibold'> Hey! {user.name} </h3> 
         <div className='py-5 flex gap-3'> 
              <button 
               onClick={()=> dispatch(setCategory("All"))}
