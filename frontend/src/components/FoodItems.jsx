@@ -16,7 +16,7 @@ function FoodItems() {
 
   const getAllDishes = async()=> { 
 
-      const response =  await axios.get("http://localhost:3000/api/dishes") ; 
+      const response =  await axios.get("https://dastarkhwan-food-delivery-ap-reactjs-backend.vercel.app/api/dishes") ; 
 
       const data = response.data ; 
 

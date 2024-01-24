@@ -43,7 +43,7 @@ function LoginSignup() {
 
          try {  
              
-            const response =  await axios.post("http://localhost:3000/api/user/register" , currentUser) ;  
+            const response =  await axios.post("https://dastarkhwan-food-delivery-ap-reactjs-backend.vercel.app/user/register" , currentUser) ;  
 
             const {user , token } = response.data; 
 
@@ -65,7 +65,7 @@ function LoginSignup() {
 
          try {   
 
-           const response = await axios.post("http://localhost:3000/api/user/login", currentUser) ; 
+           const response = await axios.post("https://dastarkhwan-food-delivery-ap-reactjs-backend.vercel.app/api/user/login", currentUser) ; 
 
            const {user, token} = response.data ; 
 
