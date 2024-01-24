@@ -1,0 +1,26 @@
+
+
+.backgroundImage { 
+    width: 100vw; 
+    height: 80vh;
+    background-image : linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+
+.container {  
+    width: 100%; 
+    height: 90%;
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.foodCard {  
+    margin: 70px 10px; 
+    box-shadow: 20px 20px 60px #00000041, inset -20px -20px 60px #ffffff40;
+} 
