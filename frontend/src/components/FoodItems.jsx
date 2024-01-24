@@ -34,7 +34,7 @@ function FoodItems() {
   } , [])
 
    return loading ? ( 
-   <div> Loading ....</div>)
+   <div className='ml-6 text-3xl text-black font-bold text-center'> Loading ....</div>)
     : ( 
     <> 
       <Toaster position="top-center" reverseOrder={false} /> 
