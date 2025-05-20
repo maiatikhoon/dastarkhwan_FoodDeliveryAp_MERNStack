@@ -16,7 +16,7 @@ main().catch(err=> console.log(err)) ;
 
 async function main() { 
 
-     await mongoose.connect("mongodb+srv://atique:V62JV2zmkB0D4KFi@cluster0.vx7cs.mongodb.net/?retryWrites=true&w=majority") 
+     await mongoose.connect("mongodb+srv://atique:V62JV2zmkB0D4KFi@cluster0.vx7cs.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0") 
      .then( ()=> { 
         console.log("db connected")  ;
      })
